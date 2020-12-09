@@ -1,0 +1,26 @@
+{
+    "id": "8BC556C6",
+    "path": "~/github/project/ars/R/ars.R",
+    "project_path": "R/ars.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1607475145261.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "15,2",
+        "scrollLine": "0",
+        "ignored_words": "wikipedia\n"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1607394082,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1607394082,
+    "read_only": false,
+    "read_only_alternatives": []
+}
