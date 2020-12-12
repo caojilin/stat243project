@@ -24,7 +24,12 @@ ars <- function(n,
 
   #source("utility.R")
 
-
+  #  n=100
+  #  g=dnorm
+  #  D_left=3
+  #  D_right=3
+  #  D_left=-3
+  #  k=10
   # INITIALIZATION STEP
 
   # Check if the parameters are valid
