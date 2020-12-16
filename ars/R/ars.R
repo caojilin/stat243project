@@ -12,8 +12,9 @@
 #' @return Results from the adaptive rejection sample from the information provided by the user
 #'
 #' @examples
+#' dis_gamma <- function(x) {return(dgamma(x, shape = 2, rate = 2))}
 #' ars(n=1000, g=dnorm , D_left = -3, D_right = 3, k = 20)
-#'
+#' ars(n=1000, g=dis_gamma, D_left = -3, D_right = 3, k = 20)
 #' @export
 
 ars <- function(n,

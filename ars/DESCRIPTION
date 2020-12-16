@@ -1,9 +1,9 @@
 Package: ars
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Adaptive Rejection Sampler
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Author: Jilin Cao, Jason Nyam Ngollong, Tianchen Xu
+Maintainer: Jilin Cao <caojilin@berkeley.edu>, Jason Nyam Ngollong <jason_nyam@berkeley.edu>, Tianchen Xu <tianchenxu@berkeley.edu>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: GPL-2
