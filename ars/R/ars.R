@@ -4,12 +4,13 @@
 #' by Gilks and Wild (1992).
 #'
 #' @param n The number of desired samples
-#' @param g The density function of interest
+#' @param g The density function of interest such as `dnorm`
+#' the valid parameters must be given, see examples.
 #' @param D_left The desired left end of domain (optional), default = -Inf
 #' @param D_right The desired right end of domain (optional), default = Inf
 #' @param k The number of desired initial Abscissa (optional), default = 10
 #'
-#' @return Results from the adaptive rejection sample from the information provided by the user
+#' @return A vector of sample from the targeted function provided by the user
 #'
 #' @examples
 #' dis_gamma <- function(x) {return(dgamma(x, shape = 2, rate = 2))}

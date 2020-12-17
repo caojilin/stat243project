@@ -9,7 +9,8 @@ ars(n, g = NA, D_left = -Inf, D_right = Inf, k = 10)
 \arguments{
 \item{n}{The number of desired samples}
 
-\item{g}{The density function of interest}
+\item{g}{The density function of interest such as `dnorm`
+the valid parameters must be given, see examples.}
 
 \item{D_left}{The desired left end of domain (optional), default = -Inf}
 
@@ -18,13 +19,14 @@ ars(n, g = NA, D_left = -Inf, D_right = Inf, k = 10)
 \item{k}{The number of desired initial Abscissa (optional), default = 10}
 }
 \value{
-Results from the adaptive rejection sample from the information provided by the user
+A vector of sample from the targeted function provided by the user
 }
 \description{
 An implementation of adaptive rejection sampling based on the tangent approach described
 by Gilks and Wild (1992).
 }
 \examples{
+dis_gamma <- function(x) {return(dgamma(x, shape = 2, rate = 2))}
 ars(n=1000, g=dnorm , D_left = -3, D_right = 3, k = 20)
-
+ars(n=1000, g=dis_gamma, D_left = -3, D_right = 3, k = 20)
 }
