@@ -1,7 +1,6 @@
 #' Adaptive Rejection Sampling
 #'
-#' An implementation of adaptive rejection sampling based on the tangent approach described
-#' by Gilks and Wild (1992).
+#' A package for adaptive rejection sampling according to a paper by Gilks and Wild (1992).
 #'
 #' @param n The number of desired samples
 #' @param g The density function of interest such as `dnorm`
@@ -23,16 +22,6 @@ ars <- function(n,
                 D_left = -Inf,
                 D_right = Inf,
                 k = 10) {
-
-  #source("utility.R")
-
-  #  n=100
-  #  g=dnorm
-  #  D_left=3
-  #  D_right=3
-  #  D_left=-3
-  #  k=10
-  # INITIALIZATION STEP
 
   # Check if the parameters are valid
   check_param(n, g, D_left, D_right, k)

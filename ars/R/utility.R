@@ -2,21 +2,20 @@ check_param <- function(n,
                         g,
                         D_left,
                         D_right,
-                        k){
-
+                        k) {
   assertthat::assert_that(is.numeric(n), msg = "Please provide n as a number")
   assertthat::assert_that(is.numeric(D_left), msg = "Please provide D_left as a number")
   assertthat::assert_that(is.numeric(D_right), msg = "Please provide D_right as a number")
   assertthat::assert_that(is.numeric(k), msg = "Please provide k as a number")
 
-  if(D_left == D_right)
+  if (D_left == D_right)
     stop("Please provide different D_left, D_right", call. = FALSE)
 
-  if(identical(g, NA))
+  if (identical(g, NA))
     stop("Please provide either g", call. = FALSE)
 
-  if(!identical(g, NA)){
-    if(class(g) != "function"){
+  if (!identical(g, NA)) {
+    if (class(g) != "function") {
       stop("Please provide g as a function", call. = FALSE)
     }
   }
@@ -39,7 +38,8 @@ derivative <- function(x, fun, a, b){
 
 # Define function to initialize T_k
 init_T_k <- function(k, D_left, D_right, h_prime) {
-
+  step = 3
+  center = 0
   # Check if h is defined on boundaries
   if(D_left != -Inf && D_right != Inf){
     #delete this later
